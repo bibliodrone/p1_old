@@ -1,0 +1,30 @@
+h2.title-main {
+	margin:auto;
+	display: inline block;
+	padding: 10px;
+	text-align:center;
+}
+
+h3.sub-title {
+    font-style: italic;
+	text-align: center;
+}
+.proj-title {
+	font-size: large;
+	background-color: lightblue;
+	text-align:center;
+}
+		
+.proj {
+	font-style: italic;
+	font-size: medium;
+	text-align:center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 30%;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+}

@@ -3,18 +3,16 @@
 ##CSci E15; Sept. 14, 2016
 
 ## Live URL
-<http://p2.dwa15.com>
+<http://p1.geewalden.me
 
 ## Description
-Project 1 
+Project 1  -- Setting up the hosts, servers, domains, and getting the portfolio page running.
 
 ## Demo
-<https://www.youtube.com/watch?v=RoqrD9ZD0N4&feature=youtu.be>
+<link>
 
 ## Details for teaching team
 No login required.
-
-
 
 ## Outside code
 None
