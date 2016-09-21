@@ -1,0 +1,63 @@
+Sub-domain (remote) setup steps, from Jannette on CSci E15 Piazza
+
+Test SSH key for GitHub
+$ssh - T git@github.com
+(If I get "Hi Jannette" I am good)
+
+STEP 1 - Make sure I have a p1 folder created at my local machine  htdocs
+In cmder, navigate to c:\xampp\htdocs\p1
+$git init 
+(this is to identify my folder as a local git repository)
+
+STEP 2 - View hidden files
+$ls -la
+(if I see a .git in blue, that means my local folder is configured for git)
+
+STEP 3 
+$git status
+(to test folder)
+
+STEP 4 - Chooose files that I want to push to GitHub.com
+$ git add README.md
+$ git add index.html
+	OR 
+$ git add --all
+
+STEP 5 - Document the changes to the files
+git commit -m "Updating README.md, correcting index.html"
+
+STEP 6 - Go to GitHub.com, via GUI, craete a new repository
+(ONE TIME TASK for the specific folder) 
+Repository name: p1 Description: Project 1 for CSCI E-15
+
+STEP 7 - Connect folder/repository on local machine to GitHub
+(ONE TIME TASK for the specific folder)
+To run this, in cmder I should be inside of the specific folder, example, inside of c:\xampp\htdocs\p1
+$git remote add origin git@github.com:JannetteA/p1.git
+(this uses the SSH patch to the repository in GitHub)
+
+STEP 8 - Double-check remotes I have now
+$git remote --v
+
+STEP 9 - Push files to GitHub
+$git push origin master
+
+STEP 10 - Connect to Digital Ocean (youc an open another console in cmder)
+$ ssh root@99.99.99.99 
+(use your IP address)
+
+STEP 11 - Navigate to my document root and clone the GitHub repository. >>> Very important to be under html  <<<
+(ONE TIME TASK)
+cd /var
+cd www
+cd html 
+~# git clone git@github.com:JannetteA/p1.git
+
+STEP 12 - Make sure you are at in Digital Ocean, under p1 folder:
+/var/www/html/p1#
+run
+~# git status
+(to check things)
+
+STEP 13 - Pull files from GitHub, make sure you are inside p1 folder:
+~# git pull origin master
